@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:experimental
 
-FROM alpeware/chrome-headless-stable:ver-92.0.4515.107
+FROM chrome-headless-stable
 
 RUN echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | debconf-set-selections \
   && apt update -y \

@@ -1,3 +1,12 @@
+= Prerequirements
+
+Prepare Google Chrome image:
+
+docker pull ubuntu:21.10
+docker build -t chrome-headless-stable chrome-headless-stable/
+docker-compose up --build --force-recreate -d
+
+
 = PDF Rendering Service
 
 A microservice for HTML to PDF rendering.

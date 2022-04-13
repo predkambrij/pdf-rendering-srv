@@ -1,0 +1,3 @@
+[submodule "chrome-headless-stable"]
+	path = chrome-headless-stable
+	url = git@github.com:predkambrij/chrome-headless-stable.git
