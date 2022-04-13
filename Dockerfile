@@ -16,6 +16,8 @@ USER node
 
 ENV HOME=/home/node
 ARG APP_HOME=/home/node/srv
+
+RUN mkdir -p "$APP_HOME"
 WORKDIR $APP_HOME
 
 RUN git clone --depth 1 https://github.com/alvarcarto/url-to-pdf-api . \
