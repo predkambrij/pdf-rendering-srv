@@ -1,7 +1,9 @@
-version: '3.7'
+version: '2.3'
 
 services:
   pdf-rendering-srv:
+    mem_limit: "${MAX_MEM:-512m}"
+    shm_size: "${MAX_SHM:-512m}"
     build:
       context: .
     environment:
